@@ -1,4 +1,4 @@
-//ALMA BOT Code
+//TankiCrates BOT
 const BotPrefix = require("./prefix.json");
 const BotTokenFile = require("./token.json");
 const Discord = require("discord.js");
@@ -119,4 +119,4 @@ bot.on("message", async message => {
 
 });
 //Key To Run BOT
-bot.login(BotTokenFile.token);
+bot.login(process.env.token);
