@@ -3,13 +3,6 @@ const BotPrefix = require("./prefix.json");
 const Discord = require("discord.js");
 const db = require("quick.db");
 
-var firebase = require(`firebase`);
-
-firebase.initializeApp({
-    serviceAccount:"./mims-firebase-service-test.json",
-    databaseURL: "https://mims-project.firebaseio.com/"
-})
-
 const fs = require("fs");
 const ms = require("ms");
 
