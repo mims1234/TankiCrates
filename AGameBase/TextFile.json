@@ -1,0 +1,25 @@
+{
+    "Info":
+    {
+        "profile1" : "use t$start to create GameProfile"
+    },
+
+    "Cooldown":
+    {
+    
+        "msg1":"Patience, little halfling! Your time will come!!",
+    
+        "msg2":"Primitive being! Stand by !!",
+        
+        "msg3":"Take a breather !!",
+    
+        "msg4":"Beep beep boop"
+    },
+    "QPaintWiki":
+    {
+        "Qpage":"**Paint Menu**\n```haskell\nPlease select a page number\n\n[1]  [2]  [3]  [4]  [5]\n[6]  [7]  [8]  [9]  [10]\n[11] [12] [13] [14] [15]\n[16] [17] [18] [19] [20]\n          [21]\n\nType 'exit' to close the menu```",
+        "InvalidEntry":":no_entry:  | **Invalid Entry**",
+        "NoEntry":":hourglass: | **Times up , Exiting the Menu**",
+        "exit":":negative_squared_cross_mark: | Exiting the Menu "
+    }
+}

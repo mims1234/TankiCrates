@@ -1,0 +1,36 @@
+{
+    "USER" :
+    {
+        "crystals" : 1000 ,
+        "scores" : 0,
+        "containers" : 
+        {
+            "BRZ" : 200,
+            "SIL" : 50
+        },
+        "paints" :
+        {
+            "CAT":true   
+        },
+        "equip" :
+        {
+            "turrent" : "",
+            "hull" : "",
+            "paint" : ""
+        },
+        "achievements" : 
+        {
+            "New": ""
+        },
+        "user_id" : true,
+        "roles":
+        {
+            "mod" : false ,
+            "helper" : false , 
+            "reporter" : false ,
+            "bugreport" : false ,
+            "creative" : false ,
+            "oweners" : false 
+        }
+    }
+}
