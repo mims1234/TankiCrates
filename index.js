@@ -31,41 +31,41 @@ fs.readdir("./1commands/", (err,files) => {
     console.log(propsCountC+' files loaded in [ 1commands ] folder')
 });
 
-//Commands Folder
-propsCountT = 0;
-fs.readdir("./2testing/", (err,files) => {
-    if(err) console.log(err);
-    let jsfile = files.filter(f => f.split(".").pop() === "js");
-    if(jsfile.lenglth <= 0)
-    {
-        console.log("Couldn't find commands");
-        return;
-    }
-    jsfile.forEach((f,i) => {
-            let props = require(`./2testing/${f}`);
-            propsCountT = propsCountT + 1
-            bot.commands.set(props.help.name, props);
-    })
-    console.log(propsCountT+' files loaded in [ 2testing ] folder')
-});
+// //Commands Folder
+// propsCountT = 0;
+// fs.readdir("./2testing/", (err,files) => {
+//     if(err) console.log(err);
+//     let jsfile = files.filter(f => f.split(".").pop() === "js");
+//     if(jsfile.lenglth <= 0)
+//     {
+//         console.log("Couldn't find commands");
+//         return;
+//     }
+//     jsfile.forEach((f,i) => {
+//             let props = require(`./2testing/${f}`);
+//             propsCountT = propsCountT + 1
+//             bot.commands.set(props.help.name, props);
+//     })
+//     console.log(propsCountT+' files loaded in [ 2testing ] folder')
+// });
 
-//Commands Folder
-propsCountA = 0;
-fs.readdir("./3admin/", (err,files) => {
-    if(err) console.log(err);
-    let jsfile = files.filter(f => f.split(".").pop() === "js");
-    if(jsfile.lenglth <= 0)
-    {
-        console.log("Couldn't find commands");
-        return;
-    }
-    jsfile.forEach((f,i) => {
-            let props = require(`./3admin/${f}`);
-            propsCountA = propsCountA + 1
-            bot.commands.set(props.help.name, props);
-    })
-    console.log(propsCountA+' files loaded in [ 3admin ] folder')
-});
+// //Commands Folder
+// propsCountA = 0;
+// fs.readdir("./3admin/", (err,files) => {
+//     if(err) console.log(err);
+//     let jsfile = files.filter(f => f.split(".").pop() === "js");
+//     if(jsfile.lenglth <= 0)
+//     {
+//         console.log("Couldn't find commands");
+//         return;
+//     }
+//     jsfile.forEach((f,i) => {
+//             let props = require(`./3admin/${f}`);
+//             propsCountA = propsCountA + 1
+//             bot.commands.set(props.help.name, props);
+//     })
+//     console.log(propsCountA+' files loaded in [ 3admin ] folder')
+// });
 
 //Bot Start
 bot.on("ready" , async () => {
@@ -93,16 +93,16 @@ bot.on("message", async message => {
         let commandfile = bot.commands.get(cmd.slice(prefix.length));
         if(commandfile) commandfile.run(bot,message,args);
     }
-    if(message.content.startsWith(prefix))
-    {
-        let commandfile = bot.testing.get(cmd.slice(prefix.length));
-        if(commandfile) commandfile.run(bot,message,args);
-    }
-    if(message.content.startsWith(prefix))
-    {
-        let commandfile = bot.admin.get(cmd.slice(prefix.length));
-        if(commandfile) commandfile.run(bot,message,args);
-    }
+//     if(message.content.startsWith(prefix))
+//     {
+//         let commandfile = bot.testing.get(cmd.slice(prefix.length));
+//         if(commandfile) commandfile.run(bot,message,args);
+//     }
+//     if(message.content.startsWith(prefix))
+//     {
+//         let commandfile = bot.admin.get(cmd.slice(prefix.length));
+//         if(commandfile) commandfile.run(bot,message,args);
+//     }
 
     if(cmd === 'becuz')
     {
