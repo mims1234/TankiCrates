@@ -1,6 +1,5 @@
 //TankiCrates BOT
 const BotPrefix = require("./prefix.json");
-const BotTokenFile = require("./token.json");
 const Discord = require("discord.js");
 const db = require("quick.db");
 
