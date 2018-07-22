@@ -8,8 +8,7 @@ module.exports.run = async (bot,message,args) => {
     //Admin Access
     if(message.author.id != '292675388180791297')
     {
-        console.log(message.author.id+ ' is inside this')
-        let gRole = message.guild.roles.find(`name`,'Testers');
+        let gRole = message.guild.roles.find(`name`,'Members');
         if(!gRole) return message.reply(`Couldn't find *"Testers"* role`);
         if(!message.member.roles.has(gRole.id)) return
     }
